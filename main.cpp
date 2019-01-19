@@ -28,6 +28,9 @@ int main(int argc, char* argv[])
         std::cout << "Please supply the paths to (1) the gameboy boot ROM and (2) a game to play." << std::endl;
         return 1;
     }*/
+    
+    const char * bootRom = "";
+    const char * game = "";
 
     SDL_Init(SDL_INIT_EVERYTHING);
     Disassembler::init();
@@ -35,8 +38,8 @@ int main(int argc, char* argv[])
     CPU::debugger.init();
     GPU::init();
 
-    CPU::initBootROM("roms/boot.gb");
-    if(!CPU::init("roms/" "link's awakening" ".gb"))
+    CPU::initBootROM(bootRom);
+    if(!CPU::init(game))
     {
 
         APU::init();
