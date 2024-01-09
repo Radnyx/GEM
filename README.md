@@ -1,6 +1,17 @@
 # GEM
 Gameboy Emulator (2015)
 
+Features:
+
+* Includes debugger to disassemble and step through assembly instructions and a memory inspector.
+
+* Supports basic TAS (Tool-Assisted-Speedrun) input playback, but generally desyncs after a few minutes.
+
+Future work:
+
+* Since `0xCB` extension opcodes are uncommon, they have only been implemented on a per need basis.
+* Proper bank switching.
+
 ## Demo
 https://www.youtube.com/watch?v=Wyak6hNqcgI
 
